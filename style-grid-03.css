@@ -74,8 +74,33 @@ html {
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
   gap: 2rem;
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.grid-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* repeat(4, 1fr) */
+}
+.grid-1-2-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.grid-1-2-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
 }
 
 /* background */
