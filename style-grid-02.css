@@ -1,0 +1,126 @@
+/* variables */
+
+:root {
+  --primary: #111111;
+  --secondary: #ffffff;
+  --alpha: 0.8;
+  --transparent: rgba(255, 0, 0, 0.865);
+  --r: red;
+  --g: green;
+  --b: blue;
+}
+
+/* reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--secondsry);
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+
+html {
+  font-size: 67.5%;
+  font-family: sans-serif;
+}
+
+/* Layout elements */
+
+.wrapper {
+  /* border: 1rem solid var(--primary); */
+  margin: auto;
+  width: 100vw;
+}
+
+.container {
+  /* border: 0.1rem solid var(--transparent); */
+  height: 49vh;
+  width: 49vw;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.large {
+  font-size: 5rem;
+}
+.btn {
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: var(--primary);
+  display: inline-block;
+  margin: 4vw;
+  padding: 1rem 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+/* grid classes */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-column-gap: 2rem; */
+  /* grid-row-gap: 4rem; */
+  gap: 2rem;
+}
+
+/* background */
+
+.red {
+  background-color: var(--r);
+}
+.green {
+  background-color: var(--g);
+}
+.blue {
+  background-color: var(--b);
+}
+
+.niebieski-plecak {
+  background-image: url("./img/plecak-niebieski-50.webp");
+  /* background-clip: content-box; */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-blend-mode: overlay;
+  object-fit: none; /* will show the actual sized image */
+}
+
+.czarny-plecak {
+  background-image: url("./img/plecak-czarny-50.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  object-fit: none;
+}
+.zielony-plecak {
+  background-image: url("./img/plecak-zielony-50.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  object-fit: none;
+}
+.fioletowy-plecak {
+  background-image: url("./img/plecak-fioletowy-50.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  object-fit: none;
+}
