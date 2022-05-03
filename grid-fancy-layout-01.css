@@ -1,0 +1,97 @@
+/* variables */
+
+:root {
+  --primary: #111111;
+  --secondary: #ffffff;
+  --alpha: 0.8;
+  --transparent: rgba(247, 0, 255, 0.5);
+  --r: red;
+  --g: green;
+  --b: blue;
+  --m: #ff00dd;
+}
+
+/* reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+
+html {
+  font-size: 67.5%;
+  font-family: sans-serif;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.inverted {
+  background-color: #111111;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+}
+
+/* Layout elements */
+
+.grid {
+  display: grid;
+  grid: 100px / repeat(3, 1fr 2fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+div {
+  background-color: #373142;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+}
+
+.grid > div:nth-child(1) {
+  background-color: rgb(173, 240, 18);
+  grid-column: 3 / 7;
+  width: auto;
+}
+.grid > div:nth-child(2) {
+  background-color: #ff00dd;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  width: auto;
+}
+
+/* grid-two */
+
+.grid-two {
+  display: grid;
+  grid: 100px / repeat(6, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.grid-two > div:nth-child(1) {
+  background-color: rgb(182, 127, 255);
+  grid-column: 3 / 7;
+  width: auto;
+}
+.grid-two > div:nth-child(2) {
+  background-color: #ff00dd;
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
+  width: auto;
+}
