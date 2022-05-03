@@ -1,0 +1,59 @@
+/* variables */
+
+:root {
+  --primary: #111111;
+  --secondary: #ffffff;
+  --alpha: 0.8;
+  --transparent: rgba(247, 0, 255, 0.5);
+  --r: red;
+  --g: green;
+  --b: blue;
+  --m: #ff00dd;
+}
+
+/* reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+
+html {
+  font-size: 67.5%;
+  font-family: sans-serif;
+}
+
+/* Layout elements */
+
+.grid {
+  display: grid;
+  grid: 100px / repeat(2, 1fr 3fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+div {
+  background-color: #373142;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+}
+
+.grid > div:nth-child(1) {
+  grid-column: 1 / -1;
+  width: auto;
+}
